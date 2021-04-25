@@ -165,7 +165,10 @@
     <body>
         <div id=header><a href=https://www.raylib.com id=logo></a>
             <div class=spinner id=spinner></div>
-            <div class=emscripten id=status>Downloading...</div><span id=controls><span><input
+            <div class=emscripten id=status>Downloading...</div><div style="float: left;"><ul><li>Miner Rescue : Ludum Dare #48 mini-game; <b>experimental</b> web build</li>
+                <li>Click "RESUME" to the right until in changes to "SUSPEND", then you can go "FULLSCREEN"</li>
+                <li>Use number keys instead of funcion keys</li>
+            </ul></div><span id=controls><span><input
                         onclick=Module.requestFullscreen(!1,!1) type=button value="🖵 FULLSCREEN"></span><span><input
                         onclick=toggleAudio() type=button value="🔇 SUSPEND" id=btn-audio></span></span>
             <div class=emscripten><progress hidden id=progress max=100 value=0></progress></div>
