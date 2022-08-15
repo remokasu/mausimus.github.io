@@ -77,7 +77,7 @@ Sierra-style AGI adventure game by Femo Duo Entertainment remastered in true 3D.
 </a>
 <p>
 A mini-game made in 48 hours for Ludum Dare 49 game jam, taking 23rd place overall.</br>
-It’s time for your annual retraining as an air traffic controller. Can you still handle the pressure? Open source.
+It?s time for your annual retraining as an air traffic controller. Can you still handle the pressure? Open source.
 </p>
 &nbsp;&nbsp;
 <a href="https://mausimus.itch.io/airobics" title="AIROBICS (itch.io)" target="_blank">itch.io</a>
