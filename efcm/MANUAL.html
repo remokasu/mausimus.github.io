@@ -4,7 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title>Escape From Castle Matsumoto - Player's Manual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <style type="text/css">
+
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
         html {
             background-color: black;
             color: white;
@@ -16,10 +39,16 @@
             border-collapse: collapse;
         }
 
-            table.outer {
-                width: 1000px;
-                margin: 0 auto;
-            }
+        th {
+            background-color: #3E3A37;
+        }
+
+
+        table.outer {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
         td.center {
             text-align: center;
@@ -29,6 +58,7 @@
             vertical-align: top;
             font-size: 20px;
             font-weight: bold;
+            padding-top: 5px;
         }
 
         td.top-margin {
@@ -49,24 +79,42 @@
         }
 
         table.inner td, th {
-            border: 1px solid white;
+            border: 1px solid #CAA878;
             padding: 5px;
         }
 
         td.separator {
-            height: 2px;
-            background-color: white;
+            height: 1px;
+            background-color: #CAA878;
         }
 
         td.title > h5 {
-            text-align: right;
-            padding-right: 24px;
+            text-align: left;
+            padding-left: 24px;
+            padding-top: 18px;
+            margin-top: 0;
         }
 
+        a {
+            color: #CAA878 !important;
+        }
+
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
-    <table class="outer">
+    <table class="outer roboto-regular">
         <colgroup>
             <col style="width: 200px;" />
             <col style="width: 800px;" />
@@ -74,8 +122,9 @@
 
         <tr>
             <td colspan="2" style="text-align: center;">
-                <h2>Escape From Castle Matsumoto</h2>
-                <h4>Player's Manual</h4>
+                <img src="manual/logo.jpg" />
+                <h1 style="padding: 20px;">Escape From Castle Matsumoto</h1>
+                <h2 style="padding-bottom: 25px;">Player's Manual</h2>
                 <p></p>
             </td>
         </tr>
@@ -87,10 +136,10 @@
             </td>
             <td class="top-margin-s">
                 <p>
-                    Medieval Japan. An evil daimyo lord has stolen treasures of the Imperial family and hidden them in his castle in an attempt to seize power.
-                    As a young Shinobi apprentice you've decided to sneak into the castle, recover the treasures and return them to their rightful owners in an
-                    attempt to bring prominence to your clan. However, a member of a competing clan has also discovered daimyo's scheme and is on the same
-                    mission as you. Do whatever it takes to be the first to recover stolen items and bring honor to your clan.
+                    Medieval Japan. An evil daimyo lord has stolen the treasures of Imperial family and hidden them in his castle in an attempt to seize power.
+                    As a young Shinobi apprentice, you have decided to sneak into the castle, recover the treasures and return them to their rightful owners to
+                    bring prominence to your clan. However, a member of a competing clan has also discovered daimyo's scheme and is on the same
+                    mission as you. Do whatever it takes to be the first to recover stolen items and bring honour to your clan.
                 </p>
             </td>
         </tr>
@@ -101,16 +150,16 @@
                 <p>Objective</p>
             </td>
             <td class="top-margin-s">
+                <img src="manual/items.png" width="810" />
                 <p>
                     Your mission is to:
                     <ul>
-                        <li>find and collect 5 Items hidden in the Castle, and</li>
-                        <li>escape through a secret Exit</li>
+                        <li>find and collect <b>5 ITEMS</b> hidden in the Castle, and</li>
+                        <li>escape through a <b>SECRET EXIT</b></li>
                     </ul>
                     ...before your opponent does!
                 </p>
             </td>
-
         </tr>
 
         <tr><td class="separator" colspan="2"></td></tr>
@@ -120,7 +169,7 @@
             </td>
             <td class="top-margin-s">
                 <p>
-                    You can play the game using a keyboard or a controller. Keyboard controls have two layouts which
+                    You can play the game using a Keyboard or a Controller. Keyboard controls have two layouts which
                     can be used when playing against another player over split-screen with a single keyboard.<br />
                     During single-player or network games you can use any of the controls (Keyboard A or B, any Gamepad).
                 </p>
@@ -192,12 +241,44 @@
 
         <tr><td class="separator" colspan="2"></td></tr>
         <tr>
+            <td class="title">
+                <p>Player's View</p>
+            </td>
+            <td class="top-margin-s">
+                <img src="manual/player-view.png" width="810" height="300" />
+                <p>
+                    Each player's view consists of:
+                    <ul>
+                        <li><b>DEFAULT ACTION</b> the player can perform</li>
+                        <li>
+                            Six-slot Inventory:
+                            <ul>
+                                <li>Map</li>
+                                <li>Five <b>TRICKS</b></li>
+                            </ul>
+                        <li>
+                            Five <b>ITEM</b> slots which can contain:
+                            <ul>
+                                <li>A highlighted Item icon when you are <b>CARRYING</b> the Item</li>
+                                <li>A greyed Item icon indicating you held and <b>STASHED</b> the Item (*) </li>
+                                <li>X indicating the Item is in the <b>SAME ROOM</b> as you (*)</li>
+                                <li>Arrows showing <b>DIRECTION</b> towards the Room with the Item (*)</li>
+                            </ul>
+                        </li>
+                        <li><b>TIME LEFT</b> (burning incense)</li>
+                    </ul><small>(*) shown indicators depend on game configuration</small>
+                </p>
+            </td>
+        </tr>
+
+        <tr><td class="separator" colspan="2"></td></tr>
+        <tr>
             <td class="title"><p>Actions</p></td>
             <td class="top-margin-s">
-                <p>Escape From Castle Matsumoto is played using four Directions and a single Action button. </p>
+                <p>Escape From Castle Matsumoto is played using four <b>DIRECTIONS</b> and a single <b>ACTION</b> button. </p>
                 <p>
-                    Action button performs the Default Action shown under player view which depends on what objects are near you: if you are standing next to a door or furniture it will show a possible interaction with them.
-                    If you are holding an item or a tool, an appropriate action will show as well. If no action is shown on screen, Action button enters Inventory.
+                    Action button performs the <b>DEFAULT ACTION</b> shown on screen which depends on what objects are near you: if you are standing next to a Door or Furniture it will show a possible interaction with them.
+                    If you are holding an Item or a tool, an appropriate action will show.</p><p>If no Default Action is shown on screen, Action button enters <b>INVENTORY</b>.
                 </p>
                 <table class="inner allcenter">
                     <colgroup>
@@ -254,45 +335,46 @@
             </td>
             <td class="top-margin-s">
                 <p>
-                    In order to win the game, you will need to carry all five items at the same time and find the secret exit.
+                    In order to win the Game, you will need to carry all <b>FIVE ITEMS</b> at the same time and find the <b>SECRET EXIT</b>.
                 </p>
                 <h3>Moving Around</h3>
                 <ul>
-                    <li>Use Directions to move your player around.</li>
-                    <li>To pass through a door, approach it and press Action to open it. You can also Close doors that have been opened.</li>
+                    <li>Use <b>DIRECTIONS</b> to move your player around.</li>
+                    <li>To pass through a <b>DOOR</b>, approach it and press Action to <b>OPEN</b> it. You can also <b>CLOSE</b> doors that have been opened.</li>
                     <li>To climb up/down stairs, simply walk over them.</li>
                 </ul>
                 <h3>Items</h3>
                 <ul>
-                    <li>Items are hidden in furniture around the castle. Approach furniture and press Action to Search it. If there was an item hidden inside, you will pick it up.</li>
-                    <li>You can only hold one item at the time, unless you have the Bag.</li>
-                    <li>If you are holding an item, you can hide it in furniture to retrieve it later: approach furniture and press Action to Stash it. Note that furniture can hide more than one item.</li>
-                    <li>The Map shows in which rooms Items are located using an X symbol.</li>
-                    <li>Depending on game configuration, arrows within your Inventory can point to locations of items.</li>
-                    <li>Items can also be lying on the ground, if a player drops them.</li>
+                    <li>Items are <b>HIDDEN</b> in Furniture around the Castle. Approach Furniture and press Action to <b>SEARCH</b> it. If there was an Item hidden inside, you will pick it up.</li>
+                    <li>You can only carry <b>ONE ITEM AT A TIME</b>, unless you have the <b>BAG</b>.</li>
+                    <li>If you are holding an Item, you can hide it in Furniture to retrieve it later: approach Furniture and press Action to <b>STASH</b> it. Note that Furniture can hide more than one Item.</li>
+                    <li>The <b>MAP</b> shows in which Rooms Items are located using an X symbol.</li>
+                    <li>Depending on game configuration, <b>ARROWS</b> in your Inventory can point to locations of Items.</li>
+                    <li>Items can also be lying on the ground, if a Player drops them.</li>
                 </ul>
                 <h3>Tricks</h3>
                 <ul>
-                    <li>To help your chances you can use Shinobi Tricks from your Inventory to protect Items you've found as well as hinder your opponent's progress. See Tricks section below for details.</li>
+                    <li>To help your chances you can use Shinobi <b>TRICKS</b> from your Inventory to protect Items you've found as well as hinder your opponent's progress. See Tricks section below for details.</li>
                 </ul>
                 <h3>Countermeasures</h3>
                 <ul>
-                    <li>To counter your opponent's tricks, you can pick up helpful countermeasures from around the Castle. See Tricks section below for details.</li>
+                    <li>To counter your opponent's Tricks, you can pick up helpful <b>COUNTERMEASURES</b> from around the Castle. See Tricks section below for details.</li>
                 </ul>
                 <h3>Confrontation</h3>
                 <ul>
-                    <li>Inevitably you will run into your opponent as you perform your mission, in which case a martial fight is inevitable. See Battle section below for details.</li>
+                    <li>Inevitably you will run into your opponent as you perform your mission, in which case a <b>MARTIAL FIGHT</b> is inevitable. See Battle section below for details.</li>
                 </ul>
                 <h3>Exit</h3>
                 <ul>
-                    <li>Once you have all five items, look for a secret exit somewhere in the castle. It will look like a half-open door.</li>
-                    <li>Depending on game configuration, Exit might be visible from the start or only from the moment a player acquires all five items.</li>
-                    <li>Once you are in front of the Exit holding all five Items, Open it like a regular Door and pass trough.</li>
+                    <li>Once you have all <b>FIVE ITEMS</b>, look for a <b>SECRET EXIT</b> somewhere in the Castle. It will look like a broken wall panel.</li>
+                    <li>Depending on game configuration, Exit might be visible from the <b>START</b> or only from the moment a player acquires all Five Items.</li>
+                    <li>Once you are in front of the <b>EXIT</b> holding all Five Items, <b>OPEN</b> it like a regular Door and pass through.</li>
                 </ul>
                 <h3>Time</h3>
                 <ul>
-                    <li>The burning incense represents the time you have left to escape. Falling victim to tricks or losing fights will make the incense burn faster.</li>
+                    <li>The burning <b>INCENSE</b> represents <b>TIME</b> you have left to escape. Falling victim to Tricks or losing fights will make the incense burn faster.</li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
@@ -300,17 +382,20 @@
         <tr>
             <td class="title"><p>Map</p></td>
             <td class="top-margin-s">
-                <p>The Map shows the layout of the Castle, location of the Player and all Items that are not being carried. Depending on game configuration, it can also show location of the other Player.</p>
-                <p>To access the Map, choose it from your Inventory (press Action button when in an open spot), or use the Quick Map button.</p>
-                <p>Castles have multiple floors; use Up/Down to switch between floors.</p>
-                <p>Left side of the Map shows a vertical cross-section of the Castle.</p>
-                <p>The Map never shows the location of the Exit.</p>
+                <img src="manual/map.png" width="810" height="300" />
+                <p>The <b>MAP</b> shows the layout of the Castle, location of the Player and all Items that are not being carried. Depending on game configuration, it can also show the location of the other Player.</p>
+                <p>
+                    To access the Map, choose it from your <b>INVENTORY</b> (press Action button when in an open spot) or use the <b>QUICK MAP</b> button.
+                    Castles have multiple <b>FLOORS</b>; use Up/Down to switch between them. Left side of the Map shows a vertical cross-section of the Castle.
+                </p>
+                <p>The Map <b>NEVER</b> shows the location of the <b>EXIT</b>.</p>
                 <ul>
-                    <li>X - Item somewhere in this Room</li>
-                    <li>Flashing Squares - Players</li>
-                    <li>Ladder - Stairs in the room (icon's alignment determines if Stairs are Up or Down)</li>
-                    <li>Highlighted Room - visited Room</li>
+                    <li><b>X</b> - there's an Item somewhere in this Room</li>
+                    <li><b>Flashing Square</b> - Player</li>
+                    <li><b>Ladder</b> - Stairs in the room (icon's alignment indicates if Stairs are Up or Down)</li>
+                    <li><b>Highlighted Room</b> - visited Room</li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
@@ -318,14 +403,16 @@
         <tr>
             <td class="title"><p>Castles</p></td>
             <td class="top-margin-s">
-                <p>There are four Castles and one Dojo available in the game.</p>
-                <p>Layouts of the castles remain unchanged but location of Items, Furniture, Doors as well as overall decoration is randomised between rounds.</p>
+                <p>
+                    There are four <b>CASTLES</b> and one <b>DOJO</b> available in the game.<br />
+                    Layouts of the Castles remain unchanged but locations of Items, Furniture, Doors as well as overall decoration is <b>RANDOMISED</b> each round.
+                </p>
             </td>
         </tr>
 
         <tr>
             <td class="title">
-                <h5>Pratice Dojo</h5>
+                <h5>Practice Dojo</h5>
             </td>
             <td class="top-margin">
                 <p>
@@ -342,8 +429,10 @@
                 <h5>Castle Tsuruga</h5>
             </td>
             <td class="top-margin">
-                <p>A narrow and tall castle, characterised by two central staircases.</p>
-                <p>The original Tsuruga castle is located in Aizuwakamatsu City in Fukushima prefecture and is famous for being a stronghold of the Tokugawa shogunate and its siege in 1868.</p>
+                <p>
+                    A narrow and tall castle, characterised by two central staircases.<br />
+                    The original Tsuruga castle is located in Aizuwakamatsu City in Fukushima prefecture and is famous for being a stronghold of the Tokugawa shogunate and its siege in 1868.
+                </p>
                 <ul>
                     <li>Floors: 5</li>
                     <li>Rooms: 17</li>
@@ -357,9 +446,11 @@
                 <h5>Castle Matsumoto</h5>
             </td>
             <td class="top-margin">
-                <p>A large castle with two towers and many floors.</p>
-                <p>The original Matsumoto castle is located in Matsumoto City in Nagano prefecture and is one of the most famous castles in Japan, having survived since the sixteenth century without being rebuilt.</p>
-                It has the nickname Crow Castle due to its black exterior.
+                <p>
+                    A large castle with two towers and many floors.<br />
+                    The original Matsumoto castle is located in Matsumoto City in Nagano prefecture and is one of the most famous castles in Japan, having survived since the sixteenth century without being rebuilt.<br />
+                    It has the nickname Crow Castle due to its black exterior.
+                </p>
                 <ul>
                     <li>Floors: 6</li>
                     <li>Rooms: 23</li>
@@ -372,8 +463,10 @@
                 <h5>Castle Edo</h5>
             </td>
             <td class="top-margin">
-                <p>A large but flat castle, characterised by an exhibition room.</p>
-                <p>The original Edo castle was located in Tokyo and served as headquarters of the Tokugawa shogunate but it has been destroyed by fire in 1873. The Imperial Palace has been rebuilt in its place at a much smaller scale.</p>
+                <p>
+                    A large but flat castle, characterised by an exhibition room.<br />
+                    The original Edo castle was located in central Tokyo and served as headquarters of the Tokugawa shogunate but it has been destroyed by fire in 1873. The Imperial Palace has been rebuilt in its place at a much smaller scale.
+                </p>
                 <ul>
                     <li>Floors: 2</li>
                     <li>Rooms: 20</li>
@@ -386,24 +479,31 @@
                 <h5>Castle Azuchi</h5>
             </td>
             <td class="top-margin">
-                <p>A smaller castle, characterised by an open center.</p>
-                <p>The original Azuchi castle was located in Shiga prefecture and served Oda Nobunaga. It only operated for a few years before being destroyed in the sixteenth century, but was pivotal to development of castles in Japan.</p>
+                <p>
+                    A smaller castle, characterised by an open centre.<br />
+                    The original Azuchi castle was located in Shiga prefecture and served Oda Nobunaga. It only operated for a few years before being destroyed in the sixteenth century, but was pivotal to development of castles in Japan.
+                </p>
                 <ul>
                     <li>Floors: 3</li>
                     <li>Rooms: 16</li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
         <tr><td class="separator" colspan="2"></td></tr>
         <tr>
-            <td class="title"><p>Tricks</p></td>
-            <td>
-                <p>Your Shinobi has an arsenal of Tricks they can use to slow down their opponent.</p>
-                <p>Some Tricks can be set up on Furniture, some on Doors, and some can be placed on the Floor.</p>
-                <p>Most Tricks have a possible countermeasure you can use to clear them (if you remember where they are!).</p>
-                <p>To setup a Trick, enter Inventory using the Action button (when standing in a open spot) and select it.</p>
-                <p>You cannot setup a Trick or pick up a Countermeasure while you're carrying an Item; drop the Item on the floor first.</p>
+            <td class="title">
+                <p>Tricks</p>
+            </td>
+            <td class="top-margin-s">
+                <p>
+                    Your Shinobi has an arsenal of <b>TRICKS</b> they can use to slow down their opponent.<br />
+                    Some Tricks can be set up on <b>FURNITURE</b>, some on <b>DOORS</b>, and some can be placed on the <b>FLOOR</b>.<br />
+                    Most Tricks have a <b>COUNTERMEASURE</b> you can use to avoid them.<br />
+                    To setup a Trick, enter <b>INVENTORY</b> using the <b>ACTION</b> button (when standing in an open spot) and select it.<br />
+                    You <b>CANNOT</b> setup a Trick or pick up a Countermeasure while you're <b>CARRYING</b> an Item; drop the Item on the floor first.
+                </p>
             </td>
         </tr>
         <tr>
@@ -440,35 +540,43 @@
                     </tr>
                     <tr>
                         <td>Yokai</td>
-                        <td>&nbsp;</td>
+                        <td><img src="manual/inv-yokai.png" /></td>
                         <td>Closed Door or Furniture</td>
                         <td>Mirror</td>
-                        <td>&nbsp;</td>
-                        <td>Mirror</td>
+                        <td><img src="manual/inv-mirror.png" /></td>
+                        <td>Mirror Stand</td>
                     </tr>
                     <tr>
                         <td>Combination Lock</td>
-                        <td>&nbsp;</td>
+                        <td><img src="manual/inv-lock.png" /></td>
                         <td>Closed Door or Furniture</td>
                         <td>Dagger</td>
-                        <td>&nbsp;</td>
+                        <td><img src="manual/inv-dagger.png" /></td>
                         <td>Sword Stand</td>
                     </tr>
                     <tr>
                         <td>Cat</td>
-                        <td>&nbsp;</td>
+                        <td><img src="manual/inv-cat.png" /></td>
                         <td>Open Door</td>
                         <td>Samurai Helmet</td>
-                        <td>&nbsp;</td>
-                        <td>Samurai Armor</td>
+                        <td><img src="manual/inv-helmet.png" /></td>
+                        <td>Samurai Armour</td>
                     </tr>
                     <tr>
                         <td>Smoke Bomb</td>
-                        <td>&nbsp;</td>
+                        <td><img src="manual/inv-bomb.png" /></td>
                         <td>On the Floor</td>
-                        <td>n/a</td>
+                        <td>-</td>
                         <td>&nbsp;</td>
-                        <td>n/a</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Smoke</td>
+                        <td><img src="manual/inv-smoke.png" /></td>
+                        <td>Anywhere</td>
+                        <td>-</td>
+                        <td>&nbsp;</td>
+                        <td>-</td>
                     </tr>
                 </table>
                 <p></p>
@@ -480,13 +588,9 @@
             </td>
             <td class="top-margin">
                 <p>
-                    Yokai are powerful ancient spirits, they will completely shock an unsuspecting Shinobi.
-                </p>
-                <p>
-                    You can entrap a yokai in Closed Doors and Furniture.
-                </p>
-                <p>
-                    Yokai can be neutralised using a mirror. You can pick one up from mirror stands in the castle.
+                    Yokai are powerful ancient <b>SPIRITS</b>, they will completely <b>SHOCK</b> an unsuspecting Shinobi.<br />
+                    You can entrap a Yokai in <b>CLOSED DOORS</b> and <b>FURNITURE</b>.<br />
+                    Yokai can be neutralised using a <b>MIRROR</b>. You can pick one up from mirror stands in the Castle.
                 </p>
             </td>
         </tr>
@@ -496,13 +600,12 @@
             </td>
             <td class="top-margin">
                 <p>
-                    You can place a combination lock on closed door or furniture. When placing a lock, you need to
-                    set a combination consisting of three pins' movements. Each pin can be moved up or down.
-                </p>
-                <p>To release the lock you need to same combination as was used while locking.</p>
-                <p>
-                    If you don't know the combination, you can break it using the dagger. Pick it up
-                    from sword stands around the castle.
+                    You can place a Combination Lock on <b>CLOSED DOOR</b> or <b>FURNITURE</b>. When placing a lock, you need to
+                    set a <b>COMBINATION</b> consisting of <b>THREE</b> pins' movements. Each pin can be moved <b>UP</b> or <b>DOWN</b>.
+                    <br />
+                    To release the Lock you need the same combination as was used while locking.<br />
+                    If you don't know the combination, you can break the Lock using a <b>DAGGER</b>. Pick it up
+                    from sword stands around the Castle.
                 </p>
             </td>
         </tr>
@@ -511,9 +614,11 @@
                 <h5>Cat</h5>
             </td>
             <td class="top-margin">
-                <p>Your trusty feline companion will guard an open door and not let anyone through (including you...)</p>
-                <p>Cat can be scared off using a Samurai Helmet. Pick it up from samurai armor displays around the castle.</p>
-                <p>While the Cat is magical, it can only be in one place at a time.</p>
+                <p>
+                    Your trusty feline companion will <b>GUARD</b> an <b>OPEN DOOR</b> and not let anyone through (including you...)<br />
+                    Cat can be scared off using a <b>SAMURAI HELMET</b>. Pick it up from samurai armour displays around the Castle.<br />
+                    While the Cat is magical, it can only be in <b>ONE PLACE AT A TIME</b>.
+                </p>
             </td>
         </tr>
         <tr>
@@ -522,7 +627,7 @@
             </td>
             <td class="top-margin">
                 <p>
-                    Smoke Bomb releases a huge cloud of smoke into the room, noone can stay near it for too long.
+                    Smoke Bomb releases a huge <b>CLOUD OF SMOKE</b> into the Room, no one can stay near it for too long. There is <b>NO WAY</b> to counter the Smoke, so you need to go around or wait until it dissipates.
                 </p>
             </td>
         </tr>
@@ -532,9 +637,10 @@
             </td>
             <td class="top-margin">
                 <p>
-                    If you find yourself in a tight spot, you can use magic smoke to reappear in another place in the castle. But
-                    beware - you will lose all your items and a bit of time!
+                    If you find yourself in a tight spot, you can use Magic Smoke to <b>REAPPEAR</b> in another place in the Castle. But
+                    beware - you will <b>LOSE</b> all your Items and a bit of Time!
                 </p>
+                <p></p>
             </td>
         </tr>
 
@@ -545,22 +651,23 @@
             </td>
             <td class="top-margin-s">
                 <p>
-                    If you run into your opponent in the Castle, you will enter a martial fight. You will automatically drop any items you're carrying.
+                    If you run into your opponent in the Castle, you will enter a <b>MARTIAL FIGHT</b>. You will automatically drop any Items you're carrying.
                 </p>
                 <ul>
-                    <li>Move in front of your opponent, facing them.</li>
-                    <li>Press and hold Action button to prepare for a move.</li>
+                    <li><b>MOVE</b> in front of your opponent, facing them.</li>
+                    <li>Press and <b>HOLD Action</b> button to prepare for a martial move.</li>
                     <li>
-                        While holding Action, press a Direction to perform a move:
+                        While holding Action, <b>PRESS A DIRECTION</b> to perform a move:
                         <ul>
-                            <li>Towards other player - low kick</li>
-                            <li>Away from other player - high block</li>
-                            <li>Up - high kick</li>
-                            <li>Down - low block</li>
+                            <li><b>Towards opponent</b> - Low Kick</li>
+                            <li><b>Away from opponent</b> - High Block</li>
+                            <li><b>Up</b> - High Kick</li>
+                            <li><b>Down</b> - Low Block</li>
                         </ul>
                     </li>
-                    <li>Three successful hits will force a Shinobi at full health to retreat. If you've won the fight but suffered a few hits, avoid another one if possible.</li>
+                    <li><b>THREE</b> successful hits will force a Shinobi at full health to <b>RETREAT</b>. If you have won a fight but suffered a few hits, avoid another one.</li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
@@ -569,17 +676,19 @@
             <td class="title">
                 <p>Strategy</p>
             </td>
-            <td>
+            <td class="top-margin-s">
                 <p>
                     It is up to you to find the winning strategy! But here are some tips:
                 </p>
                 <ul>
-                    <li>Until you have the Bag, stash any Item you find in places you remember and protect with a Trick.</li>
-                    <li>Keep an eye on your opponent's actions and remember your opponent is watching. Deception is key.</li>
-                    <li>Only rely on direct fights if you have no other option as they are difficult to win consistently.</li>
+                    <li>Until you have the <b>BAG</b>, <b>STASH</b> any Items you find in places you remember and <b>PROTECT</b> with Tricks.</li>
+                    <li>Keep an eye on your opponent's actions and remember your opponent is watching.</li>
+                    <li>Only rely on fights if you have no other option as they are difficult to win consistently.</li>
                     <li>If your opponent has a big advantage, focus on Tricking them rather than on remaining Items.</li>
                     <li>If you can find the Exit or the last Item first... make sure to "prepare" them for your opponent.</li>
                 </ul>
+                <p></p>
+                <p></p>
             </td>
         </tr>
 
@@ -588,22 +697,23 @@
             <td class="title">
                 <p>Score</p>
             </td>
-            <td>
+            <td class="top-margin-s">
                 <p>
-                    The winner is presented with a Score and a Rank. The criteria that affect Score are:
+                    The winner is presented with a <b>SCORE</b> and a <b>RANK</b>. The criteria that affect Score are:
                 </p>
                 <ul>
-                    <li>Tricking your opponent: +50 points for each successful Trick</li>
-                    <li>Use of the Map: -50 points for first use, -5 for each consecutive use</li>
-                    <li>Finding an Item first: +35 points</li>
-                    <li>Clearing a Trick setup by your opponent: +25 points</li>
-                    <li>Falling victim to opponent's Trick: -25 points</li>
-                    <li>Winning a fight: +20 points</li>
-                    <li>Losing a fight: -20 points</li>
+                    <li><b>Tricking your opponent</b>: +50 points for each successful Trick</li>
+                    <li><b>Use of the Map</b>: -50 points for first use, -5 for each consecutive use</li>
+                    <li><b>Finding an Item first</b>: +35 points</li>
+                    <li><b>Clearing a Trick setup by your opponent</b>: +25 points</li>
+                    <li><b>Falling victim to opponent's Trick</b>: -25 points</li>
+                    <li><b>Winning a fight</b>: +20 points</li>
+                    <li><b>Losing a fight</b>: -20 points</li>
                 </ul>
                 <p>
-                    Ranks are awarded every 50 points, the top Rank requires 200 points.
+                    Ranks are awarded every 50 points, the <b>TOP RANK</b> requires 200 points.
                 </p>
+                <p></p>
             </td>
         </tr>
 
@@ -612,24 +722,26 @@
             <td class="title">
                 <p>Rules</p>
             </td>
-            <td>
-                <p>When setting up a game, you can control a few of its rules.</p>
-                <p>Rules are combined into pre-set Difficulties, but you can also customize each individually.</p>
+            <td class="top-margin-s">
+                <p>
+                    When setting up a game, you can control a few of its rules.<br />
+                    Rules are combined into pre-set Difficulties, but you can also customize each individually.
+                </p>
                 <table class="inner">
                     <colgroup>
                         <col style="width: 25%;" />
                         <col style="width: 75%;" />
                     </colgroup>
                     <tr>
-                        <td>CPU Skill</td>
+                        <th>CPU Skill</th>
                         <td>Harder difficulty will make CPU opponent faster with fewer mistakes</td>
                     </tr>
                     <tr>
-                        <td>Show Exit</td>
-                        <td>Determines if the Exit will be visible from the start or only from the moment one player aquires all items (a bell sound will be heard).</td>
+                        <th>Show Exit</th>
+                        <td>Determines if the Exit will be visible from the start or only from the moment one player acquires all items (a bell sound will be heard).</td>
                     </tr>
                     <tr>
-                        <td>Time Limit</td>
+                        <th>Time Limit</th>
                         <td>
                             Controls the starting time allocated to each player:
                             <ul>
@@ -640,7 +752,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Arrow Guides</td>
+                        <th>Arrow Guides</th>
                         <td>
                             Controls arrows in the Inventory:
                             <ul>
@@ -651,7 +763,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Show Other Player</td>
+                        <th>Show Other Player</th>
                         <td>Controls whether the other Player is shown on the Map</td>
                     </tr>
                 </table>
@@ -672,39 +784,39 @@
                         <col style="width: 75%;" />
                     </colgroup>
                     <tr>
-                        <td>Full Screen</td>
+                        <th>Full Screen</th>
                         <td>Toggle between full-screen and windowed modes</td>
                     </tr>
                     <tr>
-                        <td>TV Filter</td>
+                        <th>TV Filter</th>
                         <td>Apply a retro-style screen effect</td>
                     </tr>
                     <tr>
-                        <td>Camera</td>
+                        <th>Camera</th>
                         <td>Toggle between floating and stationary camera (reduces 3D effect)</td>
                     </tr>
                     <tr>
-                        <td>Movement</td>
+                        <th>Movement</th>
                         <td>Toggles between smooth (modern) and animation-aligned player movement (reminiscent of old games)</td>
                     </tr>
                     <tr>
-                        <td>Highlight</td>
-                        <td>Toggles flat colour highlight of Doors and Furniture when placing traps or stashing items</td>
+                        <th>Highlight</th>
+                        <td>Toggles flat colour highlight of Doors and Furniture when placing Traps or stashing Items</td>
                     </tr>
                     <tr>
-                        <td>Steam IDs</td>
+                        <th>Steam IDs</th>
                         <td>Hides your Steam username and ID for privacy</td>
                     </tr>
                     <tr>
-                        <td>Music</td>
+                        <th>Music</th>
                         <td>Toggles music on/off</td>
                     </tr>
                     <tr>
-                        <td>Volume</td>
+                        <th>Volume</th>
                         <td>Game volume on a scale from 0 to 10</td>
                     </tr>
                     <tr>
-                        <td>V-Sync</td>
+                        <th>V-Sync</th>
                         <td>Toggles GPU sync to monitor's refresh rate</td>
                     </tr>
                 </table>
@@ -717,9 +829,11 @@
             <td class="title">
                 <p>Multiplayer</p>
             </td>
-            <td>
-                <p>Escape From Castle Matsumoto is best enjoyed with a friend!</p>
-                <p>You can play with another player on the same computer or over a network.</p>
+            <td class="top-margin-s">
+                <p>
+                    Escape From Castle Matsumoto is best enjoyed <b>WITH A FRIEND</b>!<br />
+                    You can play with another player on the <b>SAME COMPUTER</b> or over a <b>NETWORK</b>.
+                </p>
             </td>
         </tr>
 
@@ -767,6 +881,7 @@
                     <li>You can use Message function from the Menu (or press T) to chat during a match</li>
                     <li>You can see the connection latency ("ping") in top-right when connected; under 250 is OK</li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
@@ -775,7 +890,7 @@
             <td class="title">
                 <p>About</p>
             </td>
-            <td>
+            <td class="top-margin-s">
                 <p>Escape From Castle Matsumoto is a passion project of Mausimus (coding) and Joker (art, music).</p>
                 <p>The game is free for everyone to enjoy.</p>
                 <p>
@@ -785,21 +900,23 @@
                     <li>Sound Effects by taira-komori.jpn.org</li>
                     <li>Title Font by Eisen Tsunanori</li>
                     <li>TV Shader by r57shell</li>
-                    <li>A large collection of open-source tools and libraries during development, see ThirdParty.txt for details.</li>
                 </ul>
+                <p></p>
                 <p>
                     Thank you for playing our game! Check out our other games and projects at:
                 </p>
                 <ul>
-                    <li>https://mausimus.net</li>
-                    <li>http://home.deds.nl/~femo</li>
+                    <li><a href="https://mausimus.net" target="_blank">https://mausimus.net</a></li>
+                    <li><a href="http://home.deds.nl/~femo" target="_blank">http://home.deds.nl/~femo</a></li>
                 </ul>
+                <p></p>
             </td>
         </tr>
 
+        <tr><td class="separator" colspan="2"></td></tr>
         <tr>
             <td colspan="2">
-                <p>&copy; 2024 Mausimus. All Rights Reserved.</p>
+                <p style="font-size: 12px;">&copy; 2024 Mausimus. All Rights Reserved.</p>
             </td>
         </tr>
 
