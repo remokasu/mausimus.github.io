@@ -7,8 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="manual/icon.png" />
 
     <style type="text/css">
+
+        @media print {
+            .break
+            {
+                page-break-before: always;
+                height: 20px;
+            }
+        }
 
         .roboto-regular {
             font-family: "Roboto", sans-serif;
@@ -239,6 +248,8 @@
             </td>
         </tr>
 
+        <tr class="print-only"><td><div class="break"></div></td></tr>
+
         <tr><td class="separator" colspan="2"></td></tr>
         <tr>
             <td class="title">
@@ -278,7 +289,9 @@
                 <p>Escape From Castle Matsumoto is played using four <b>DIRECTIONS</b> and a single <b>ACTION</b> button. </p>
                 <p>
                     Action button performs the <b>DEFAULT ACTION</b> shown on screen which depends on what objects are near you: if you are standing next to a Door or Furniture it will show a possible interaction with them.
-                    If you are holding an Item or a tool, an appropriate action will show.</p><p>If no Default Action is shown on screen, Action button enters <b>INVENTORY</b>.
+                    If you are holding an Item or a tool, an appropriate action will show.
+                </p><p>
+                    If no Default Action is shown on screen, Action button enters <b>INVENTORY</b>.
                 </p>
                 <table class="inner allcenter">
                     <colgroup>
@@ -345,9 +358,10 @@
                 </ul>
                 <h3>Items</h3>
                 <ul>
+                    <li>You can only carry <b>ONE ITEM &nbsp; <img src="manual/item.png" style="margin-bottom: -5px;" /> &nbsp; AT A TIME</b>, unless you have the <b>BAG</b> &nbsp; <img src="manual/bag.png" style="margin-bottom: -5px;" /></li>
                     <li>Items are <b>HIDDEN</b> in Furniture around the Castle. Approach Furniture and press Action to <b>SEARCH</b> it. If there was an Item hidden inside, you will pick it up.</li>
-                    <li>You can only carry <b>ONE ITEM AT A TIME</b>, unless you have the <b>BAG</b>.</li>
                     <li>If you are holding an Item, you can hide it in Furniture to retrieve it later: approach Furniture and press Action to <b>STASH</b> it. Note that Furniture can hide more than one Item.</li>
+                    <div class="break"></div>
                     <li>The <b>MAP</b> shows in which Rooms Items are located using an X symbol.</li>
                     <li>Depending on game configuration, <b>ARROWS</b> in your Inventory can point to locations of Items.</li>
                     <li>Items can also be lying on the ground, if a Player drops them.</li>
@@ -771,7 +785,12 @@
             </td>
         </tr>
 
-        <tr><td class="separator" colspan="2"></td></tr>
+        <tr class="print-only"><td><div class="break"></div></td></tr>
+
+        <tr>
+            <td class="separator" colspan="2">
+            </td>
+        </tr>
         <tr>
             <td class="title">
                 <p>Options</p>
